@@ -16,6 +16,10 @@ function adicionar() {
 }
 
 function sortear() {
+    if(amigos.length < 4){
+        alert("Você precisa de no minímo 4 participantes!!!")
+    return;
+    }else
     shuffle(amigos)
     let sorteio = document.getElementById('lista-sorteio');
     
